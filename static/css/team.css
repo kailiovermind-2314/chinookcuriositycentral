@@ -31,7 +31,7 @@ body {
 
 /* Parallax */
 .team-parallax {
-    background-image: url("../src/contest/team-2023.jpg");
+    background-image: url("../src/profiles/team-2023.jpg");
     min-height: 100vh; 
 
     background-attachment: fixed;
