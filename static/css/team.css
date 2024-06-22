@@ -1,0 +1,115 @@
+/* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
+body {
+    background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);
+    font-family: 'DM Sans', sans-serif;
+}
+.inverse-gradient{
+    background-image: linear-gradient(aliceblue, grey);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vr {
+    width: 2px; 
+    height: 50px; 
+    background-color: #000000; 
+    margin: 0 0 12px 5%;
+}
+.hr {
+    height: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%; 
+    background-color: #000000; 
+}
+.card {
+    background-color: aliceblue;
+}
+
+/* Parallax */
+.team-parallax {
+    background-image: url("../src/contest/team-2023.jpg");
+    min-height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The special effect dictionary */
+@media (prefers-reduced-motion: no-preference) {
+    .fading {
+        animation: fade-in 2.2s;
+    }
+    .sliding {
+        animation: slide-in 1.2s;
+    }
+    .spinning {
+        animation: spin-in 4.2s;
+    }
+}
+
+/* Fade-in effect for middle section */
+.fade-target {
+    opacity: 0;
+    transform: rotateX(-10deg);
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.slide-target {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.spin-target {
+    opacity: 0;
+    transform: rotateY(-90deg);
+}
+@keyframes spin-in {
+    from {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transform: scaleX(1);
+    opacity: 1;
+    transition: 0.9s;
+}
+
+#navbar.invisible {
+    transform: scaleX(0.99);
+    opacity: 0;
+}
