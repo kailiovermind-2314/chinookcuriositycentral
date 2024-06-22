@@ -1,13 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Main | Chinook Curiosity Central</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1 class="mx-auto;">Welcome.</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Logo + Title + Font -->
+        <link rel="icon" href="static/src/logo.webp" type="webp">
+        <title>Main | Chinook Curiosity Central</title>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+        <!-- All the CSS stylesheets! -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/index.css">
+        
+        <!-- Javascripts (not used for now) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script defer src="static/js/index.js"></script>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img style="margin-right: 1%;" src="static/src/logo.webp" alt="Chinook Curiosity Central" width="50" height="50">
+                    Chinook Curiosity Central
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-4 column-gap-3">
+                        <li class="nav-item slide-target">
+                            <a class="nav-link active underline" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item slide-target">
+                            <a class="nav-link" href="team.html">About</a>
+                        </li>
+                        <li class="nav-item slide-target">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item dropdown slide-target">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Daily Curiosities
+                            </a>
+                            <ul class="dropdown-menu fade-target">
+                            <li><a class="dropdown-item" href="#">Challenge of the Day</a></li>
+                            <li><a class="dropdown-item" href="#">Fact of the Day</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Executive's Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row align-items-center column-gap-4" style="gap: 15px;">
+                        <li class="nav-item slide-target" style="margin-top: 1%;">
+                            <a href="https://discord.com/app" target="_blank" role="button">
+                                <img src="static/src/discord-logo.svg" alt="Discord" width="30" height="30">
+                            </a>
+                        </li>
+                        <li class="nav-item slide-target" style="margin-top: 1%;">
+                            <a href="https://www.instagram.com/chinook_curiosity_central/" target="_blank" role="button">
+                                <img src="static/src/instagram-logo.png" alt="Instagram" width="30" height="30">
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Introduction + Quote? -->
+            <div class="container mt-5 slide-target page">
+                <div class="p-5">
+                    <img src="static/src/logo.webp" class="rounded mx-auto mt-4 d-block" alt="...">
+                    <section class="mt-5">
+                        <h1>Welcome to the Beginning.</h1>
+                    </section>
+                    <div class="hr"></div>
+                    <figure class="text-center p-4">
+                        <blockquote class="blockquote fst-italic">
+                        <p class="text-break">To search is to endeavor, fail, and discover.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                        Qinkai Li, <cite title="Source Title">2024-2025 Executive</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CCC Mission Statement -->
+            <div class="container p-4 page">
+                <div class="row p-5 border rounded border-black">
+                    <!-- Introductions -->
+                    <div class="col" style="flex-direction: column;">
+                        <h2 class="underline slide-target" style="margin-bottom: 0;">Our Organization</h2>
+                        <button class="collapsible1 active-collapsible text-start fw-bold slide-target">History</button>
+                        <div class="contentbox">
+                            <p class="content underline fade-target">
+                                We are a student-led, non-profit initiative committed to contributing to the 
+                                Calgary community by empowering youth through support and fostering their curiosity.
+                                Founded in 2023, this organization has been promoting the gestation of curiosity in
+                                the minds of hundreds.
+                            </p>
+                        </div>
+                        <button class="collapsible1 text-start fw-bold active-collapsible slide-target">Projects</button>
+                        <div class="contentbox">
+                            <p class="content underline fade-target">
+                                Contests, Podcasts...
+                            </p>
+                        </div>
+                        <button class="collapsible1 text-start fw-bold active-collapsible slide-target">Mission</button>
+                        <div class="contentbox fade-target">
+                            <p class="content underline">
+                                Erm?
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Linktree-esque container -->
+                    <div class="col p-5 slide-target">
+                        <div class="border border-black p-3" style="background-color: aliceblue; color:rgb(48, 48, 48); box-shadow: 10px 10px rgb(0, 0, 0);">
+                            <h2>The Enigma Express</h2>
+                            <iframe style="border-radius: 12px; margin: 2% 0 2% 0" src="https://open.spotify.com/embed/show/39Qy2HtjEB4EwlXmCf2bAM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <p>
+                                Since 2023 Chinook Curiosity Central's founder, Weidong Zhang, has been running this 
+                                Spotify podcast to inspire thought and imbibe curiosity in its readers. This year, we
+                                are taking this podcast to another level by exploring all sorts of questions ranging
+                                from pure mathematics to biology and even to literature.
+                            </p>
+                            <p>
+                                Our goal is not to simply give you knowledge. There is always too much to discover.
+                                It is a matter of mindset - to realize that there will always be more in this world,
+                                and it is never too late to learn. Keep searching.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="container-fluid p-5 page">
+                <section class="mt-5 mb-4">
+                    <h1 class="slide-target">The 2024-2025 Plan</h1>
+                </section>
+                <div class="container text-center">
+                    <div class="row" style="display: flex; column-gap: 5%;">
+                        <div class="col inverse-gradient rounded spin-target">
+                            <span class="p-3">
+                                <h5 class="card-title">2024 Chinook Curiosity Contest</h5>
+                                <div class="hr"></div>
+                                <p class="card-text">
+                                    Our most anticipated event is returning with an extra twist. 
+                                    Join us in the Central Library for an afternoon of curiosity,
+                                    and of course, prizes.
+                                </p>
+                                <p>
+                                    <a href="events.html">
+                                        <img border="0" alt="contest" src="static/src/contest/contest-promotion.jpg" class="img-fluid">
+                                    </a>
+                                </p> 
+                            </span>
+                        </div>
+                        <div class="col inverse-gradient rounded spin-target">
+                            <span class="p-3">
+                                <h5 class="card-title">???</h5>
+                                <div class="hr"></div>
+                                <p class="card-text">
+                                    "To Err is Human; to Forgive, Divine."
+                                </p>   
+                            </span>
+                        </div>
+                        <div class="col inverse-gradient rounded spin-target">
+                            <span class="p-5">
+                                <h5 class="card-title">???</h5>
+                                <div class="hr"></div>
+                                <p class="card-text">
+                                    "Don't regret on what never existed."
+                                </p>   
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid mt-5" style="background-color: aliceblue;">
+            <div class="container overflow-hidden text-center pt-3 pb-5"> <!-- Changed 'container' to 'container-fluid' -->
+                <div class="mb-5">
+                    <div class="col">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="static/src/logo.webp" alt="Chinook Curiosity Central" width="50" height="50">
+                            Chinook Curiosity Central
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="display: flex;">
+                    <div class="col mb-3 border-end" style="width: 50;">
+                        <h5>Daily Curiosities</h5>
+                        <ul class="nav flex-column p-3">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Fact of the Day</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Executive's Blog</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Problem of the Day</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Thinker's Publication #1</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Thinker's Publication #2</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Events</h5>
+                        <ul class="nav flex-column p-3">
+                            <li class="nav-item mb-2 fw-semibold"><a href="#" class="nav-link p-0 text-muted">Chinook Curiosity Contest</a></li>
+                            <li class="nav-item mb-2 fw-semibold"><a href="#" class="nav-link p-0 text-muted">The Curiosity Presentation Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3 border-start">
+                        <h5>Quick Forms</h5>
+                        <ul class="nav flex-column p-3">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Project Registration</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contest Registeration</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Thinker Publication Form</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Fact of the Day Proposals</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Problem of the Day Answers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-2 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted fw-lighter fs-6" style="opacity: 0.5;">© 2022 Chinook Curiosity Central. Some rights reserved.</span>
+            </div>
+        </footer>               
+    </body>
 </html>
