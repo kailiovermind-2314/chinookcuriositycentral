@@ -37,6 +37,9 @@ body {
     .row {
         flex-direction: column;
     }
+    .responsive-hr {
+        border-bottom: 1px solid #dee2e6; /* Light gray border */
+    }
 
     .col {
         width: 100%;
