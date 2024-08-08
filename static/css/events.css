@@ -3,6 +3,47 @@ body {
     background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);;
     font-family: 'DM Sans', sans-serif;
 }
+/* Mobile styles */
+@media (max-width: 600px) {
+    /* Adjusting the navbar for mobile */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .page {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Make the Enigma Express container responsive */
+    .inverse-gradient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Stack cards vertically on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 .inverse-gradient{
     background-image: linear-gradient(#B7967A, #d8b294);
 }
@@ -28,6 +69,9 @@ body {
 .underline {
     padding-bottom: 1.5%; 
     border-bottom: 2px solid black;
+}
+.mx-auto {
+    display: block; margin-left: auto; margin-right: auto;
 }
 
 /* The special effect dictionary */
@@ -102,4 +146,14 @@ body {
 #navbar.invisible {
     transform: scaleX(0.99);
     opacity: 0;
+}
+
+.img-fluid {
+    height: auto; 
+    width: 90%;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-fluid:hover {
+    box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.438), 0 6px 20px 0 rgba(0, 0, 0, 0.637);
 }
