@@ -1,13 +1,6 @@
 # Chinook Curiosity Central
-Deployed through vercel using the starter HTML template.
-Designed and executed by current leader of the organization.
 
+Deployed through Vercel using the starter HTML template.
+Designed and executed by current leader of the organization.
 ---
-name: HTML Starter
-slug: html-starter-with-analytics
-description: HTML5 template with analytics and advanced routing configuration.
-deployUrl: https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html
-relatedTemplates:
-  - nextjs-boilerplate
----
-This is a starter HTML5 templates which is configured with Vercel Analytics (through a `script` tag), advanced routing with [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), as well as some basic styles.
+This is a starter HTML5 template configured with Vercel Analytics (through a `script` tag), advanced routing with [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), and some basic styles.
