@@ -3,6 +3,9 @@ body {
     background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);
     font-family: 'DM Sans', sans-serif;
 }
+.debug {
+    border: 5px solid red;
+}
 /* Mobile styles */
 @media (max-width: 600px) {
     /* Adjusting the navbar for mobile */
@@ -26,6 +29,12 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
+    .responsive-hr {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
+    }
 
     /* Make the Enigma Express container responsive */
     .inverse-gradient {
@@ -37,9 +46,6 @@ body {
     .row {
         flex-direction: column;
     }
-    .responsive-hr {
-        border-bottom: 1px solid #dee2e6; /* Light gray border */
-    }
 
     .col {
         width: 100%;
@@ -48,6 +54,10 @@ body {
 }
 .inverse-gradient{
     background-image: linear-gradient(aliceblue, grey);
+}
+.underline {
+    padding-bottom: 1.5%; 
+    border-bottom: 2px solid black;
 }
 
 .page {
@@ -78,7 +88,8 @@ body {
 /* Parallax */
 .team-parallax {
     background-image: url("../src/profiles/team-2023.jpg");
-    min-height: 100vh; 
+    min-height: 100vh;
+    height: auto;
 
     background-attachment: fixed;
     background-position: center;
