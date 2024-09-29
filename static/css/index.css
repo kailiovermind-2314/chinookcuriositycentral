@@ -3,6 +3,9 @@ body {
     background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);;
     font-family: 'DM Sans', sans-serif;
 }
+.debug {
+    border: 5px solid red;
+}
 /* Mobile styles */
 @media (max-width: 600px) {
     /* Adjusting the navbar for mobile */
@@ -38,16 +41,31 @@ body {
         flex-direction: column;
     }
     .responsive-hr {
-        border-bottom: 1px solid #dee2e6; /* Light gray border */
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
     }
-
     .col {
         width: 100%;
         margin-bottom: 20px;
     }
 }
 
+.page {
+    margin-top: 10px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
 @media (max-width: 768px) { /* This targets screens below the md breakpoint */
+    
+}
+@media (max-width: 992px) { /* This targets screens below the lg breakpoint */
+    .page {
+        margin-top: 1px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
     .responsive-centering {
         display: block;
         margin-left: auto;
@@ -55,11 +73,6 @@ body {
     }
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .vr {
     width: 2px; 
     height: 50px; 
@@ -93,7 +106,9 @@ body {
     border-bottom: 2px solid black;
 }
 .mx-auto {
-    display: block; margin-left: auto; margin-right: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 /* Collapsible #1 */
 .collapsible1 {
@@ -203,12 +218,10 @@ body {
     opacity: 0;
 }
 
-.img-fluid {
-    height: auto; 
-    width: 90%;
+.gradient-div {
     transition: 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.img-fluid:hover {
+.gradient-div:hover {
     box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.438), 0 6px 20px 0 rgba(0, 0, 0, 0.637);
 }
