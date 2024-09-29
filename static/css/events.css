@@ -3,6 +3,9 @@ body {
     background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);;
     font-family: 'DM Sans', sans-serif;
 }
+.debug {
+    border: 5px solid red;
+}
 /* Mobile styles */
 @media (max-width: 600px) {
     /* Adjusting the navbar for mobile */
@@ -23,8 +26,9 @@ body {
     }
 
     .page {
-        padding-left: 0;
-        padding-right: 0;
+        margin-top: 1px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
     /* Make the Enigma Express container responsive */
@@ -32,19 +36,28 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
+    .responsive-hr {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
+    }
 
     /* Stack cards vertically on small screens */
     .row {
         flex-direction: column;
-    }
-    .responsive-hr {
-        border-bottom: 1px solid #dee2e6; /* Light gray border */
     }
 
     .col {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.page {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .inverse-gradient{
@@ -64,8 +77,8 @@ body {
 }
 .hr {
     height: 2px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 100%; 
     background-color: #000000; 
 }
