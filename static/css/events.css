@@ -6,53 +6,10 @@ body {
 .debug {
     border: 5px solid red;
 }
-/* Mobile styles */
-@media (max-width: 600px) {
-    /* Adjusting the navbar for mobile */
-    .navbar-nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-nav .nav-item {
-        width: 100%;
-        text-align: left;
-    }
-
-    .container,
-    .container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .page {
-        margin-top: 1px;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    /* Make the Enigma Express container responsive */
-    .inverse-gradient {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .responsive-hr {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
-    }
-
-    /* Stack cards vertically on small screens */
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.offcan {
+    width: 50%;
 }
+
 
 .page {
     margin-top: 10px;
@@ -172,4 +129,58 @@ body {
 }
 .img-fluid:hover {
     box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.438), 0 6px 20px 0 rgba(0, 0, 0, 0.637);
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    /* Adjusting the navbar for mobile */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .page {
+        margin-top: 1px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    /* Make the Enigma Express container responsive */
+    .inverse-gradient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .responsive-hr {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
+    }
+
+    /* Stack cards vertically on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 762px) {
+    .offcan {
+        width: 100%;
+    }
 }
