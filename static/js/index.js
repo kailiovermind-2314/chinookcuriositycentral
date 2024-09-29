@@ -78,12 +78,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-/* Navigation Bar Transitions */
+/* Navigation Bar Transitions 
 var lastScroll = window.scrollY;
 
 window.onscroll = function() {
     var currentScroll = window.scrollY;
-    if (lastScroll > (currentScroll)) {
+    if (lastScroll > (currentScroll - 1)) {
         document.getElementById("navbar").classList.remove('invisible');
     } 
     else {
@@ -91,13 +91,4 @@ window.onscroll = function() {
     }
     lastScroll = currentScroll;
 }
-
-/* VH Solution? */
-function setFixedVH() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    document.querySelector('.page').style.height = `calc(var(--vh, 1vh) * 100)`;
-}
-
-window.addEventListener('resize', setFixedVH);
-setFixedVH();
+*/
