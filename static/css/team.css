@@ -3,6 +3,9 @@ body {
     background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);
     font-family: 'DM Sans', sans-serif;
 }
+body::-webkit-scrollbar { 
+    display: none; 
+}
 .debug {
     border: 5px solid red;
 }
