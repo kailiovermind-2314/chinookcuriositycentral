@@ -1,8 +1,13 @@
 /* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
 body {
-    background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);;
+    background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);
     font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
 }
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
 .debug {
     border: 5px solid red;
 }
@@ -57,9 +62,6 @@ body {
     margin-left: 20rem;
     margin-right: 20rem;
 }
-@media (max-width: 768px) { /* This targets screens below the md breakpoint */
-    
-}
 @media (max-width: 992px) { /* This targets screens below the lg breakpoint */
     .page {
         margin-top: 1px;
@@ -92,12 +94,19 @@ body {
 
 /* Curiosities */
 .curiosity {
-    background-color: transparent;
+    background-color: white;
     transition: 0.3s;
-    border-width: 0;
 }
 .curiosity:hover {
     background-color: aliceblue;
+}
+@media (max-width: 768px) { /* This targets screens below the md breakpoint */
+    .curiosity {
+        width: 100%;
+    }
+    .curiosity:hover {
+        background-color: aliceblue;
+    }
 }
 
 /* Waterfall */
