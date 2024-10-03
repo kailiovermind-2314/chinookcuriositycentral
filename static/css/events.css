@@ -6,6 +6,7 @@ body {
 body::-webkit-scrollbar { 
     display: none; 
 }
+
 .debug {
     border: 5px solid red;
 }
