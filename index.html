@@ -16,14 +16,6 @@
         <!-- Javascripts (not used for now) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script defer src="static/js/index.js"></script>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "https://chinookcuriositycentral.vercel.app/index.html",
-          "logo": "https://chinookcuriositycentral.vercel.app/static/src/logo.webp",
-        }
-        </script>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary z-3" id="navbar" style="z-index: 500;">
             <div class="container-fluid">
@@ -72,9 +64,7 @@
                 </div>
             </div>
         </nav>
-    </head>
-    <body>
-        <div class="card text-center border-0" style="border-radius: 0; margin-top: 4.8rem; background-image: linear-gradient(#f8f9fa, #D9DCDE);">
+        <div class="card text-center border-0 header-gradient" style="border-radius: 0; padding-top: 4.749rem;">
             <div class="card-text">
                 Registration for the 2024 Chinook Curiosity Mathematical Challenge is Open!
             </div>
@@ -87,13 +77,21 @@
                 Use the following form to register for the contest. You can only submit the form once. Ends on October 26, 2024. Limited spots.
             </span>
         </div>
+    </head>
+    <body>
+        
         <div style="background-color: white; padding-top: 4rem;">
             <!-- Introduction + Quote? -->
             <div class="container" style="padding-bottom: 3%;">
                 <div class="row row-col-2 justify-content-center">
-                    <div class="col-lg-4 mb-5">
+                    <div class="col-lg-4 mb-3">
                         <!-- Button trigger modal -->
-                        <input type="image" class="slide-target gradient-div responsive-centering" src="static/src/logo.webp" width="90%" height="auto" data-bs-toggle="modal" data-bs-target="#executivemessageModal"/>
+                        <input type="image" class="slide-target gradient-div responsive-centering" style="margin-bottom: 2rem;" src="static/src/logo.webp" width="90%" height="auto" data-bs-toggle="modal" data-bs-target="#executivemessageModal"/>
+                        <div class="col slide-target">
+                            <a href="https://linktr.ee/Chinook_Curiosity_Central" style="all: unset; cursor: pointer; margin-right: 10px;" target="_blank">
+                                <button type="button" class="btn btn-outline-dark btn-lg responsive-centering">LEARN MORE &rarr;</button>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-8 text-lg-start text-center mb-5">
                         <h1 class="underline slide-target" style="margin-bottom: 2%;">Welcome to the Beginning.</h1>
@@ -108,17 +106,13 @@
                             their curiosities in new directions.
                         </p>
                     </div>
-                    <div class="col slide-target">
-                        <a href="https://linktr.ee/Chinook_Curiosity_Central" style="all: unset; cursor: pointer; margin-right: 10px;" target="_blank">
-                            <button type="button" class="btn btn-outline-dark btn-lg responsive-centering">LEARN MORE &rarr;</button>
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
             <!--
             <div class="hr spin-target"></div>
             <div class="fade-target container-fluid text-center pt-3 mt-5 pb-5">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 justify-content-center" style="overflow: hidden;">
+                <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
                     <div class="col clearfix">
                         <div class="curiosity border card h-100" onclick="location.href='#';" style="cursor: pointer;">
                             <div class="card-body">
@@ -132,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col clearfix">
+                    <div class="col">
                         <div class="curiosity border card h-100" onclick="location.href='#';" style="cursor: pointer;">
                             <div class="card-body">
                                 <h5 class="card-title">Fact of the Month</h5>
@@ -146,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            --!>
+            -->
         </div>
         
         <!-- Modal -->
@@ -182,7 +176,7 @@
             <section class="pt-4 pb-4">
                 <h1 class="slide-target text-center">2024-2025 Events</h1>
             </section>
-            <div class="text-center page">
+            <div class="text-center mx-auto calendar-card">
                 <div class="card mx-auto gradient-div slide-target" onclick="location.href='events.html';" style="cursor: pointer;">
                     <img height="500" src="static/src/contest/contest-promotion.jpg" class="card-img-top"  style="object-fit: cover;" alt="...">
                     <div class="card-header">
