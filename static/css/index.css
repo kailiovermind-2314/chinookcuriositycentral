@@ -56,6 +56,10 @@ body::-webkit-scrollbar {
         margin-bottom: 20px;
     }
 }
+.header-gradient {
+    background: #D9DCDE;
+    background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
+}
 
 .page {
     margin-top: 10px;
@@ -100,8 +104,14 @@ body::-webkit-scrollbar {
 .curiosity:hover {
     background-color: aliceblue;
 }
+.calendar-card {
+    width: 60%;
+}
 @media (max-width: 768px) { /* This targets screens below the md breakpoint */
     .curiosity {
+        width: 100%;
+    }
+    .calendar-card {
         width: 100%;
     }
     .curiosity:hover {
