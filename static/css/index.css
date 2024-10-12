@@ -61,17 +61,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
 }
 
-.page {
-    margin-top: 10px;
-    margin-left: 20rem;
-    margin-right: 20rem;
-}
 @media (max-width: 992px) { /* This targets screens below the lg breakpoint */
-    .page {
-        margin-top: 1px;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
     .responsive-centering {
         display: block;
         margin-left: auto;
@@ -116,6 +106,11 @@ body::-webkit-scrollbar {
     }
     .curiosity:hover {
         background-color: aliceblue;
+    }
+}
+@media (max-width: 576px) { /* This targets screens below the sm breakpoint */
+    .sm-noborder {
+        border: 0 !important; 
     }
 }
 
