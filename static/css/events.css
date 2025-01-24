@@ -1,11 +1,4 @@
 /* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
-body {
-    background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);;
-    font-family: 'DM Sans', sans-serif;
-}
-body::-webkit-scrollbar { 
-    display: none; 
-}
 
 .debug {
     border: 5px solid red;
@@ -43,88 +36,6 @@ body::-webkit-scrollbar {
     width: 100%; 
     background-color: #000000; 
 }
-.underline {
-    padding-bottom: 1.5%; 
-    border-bottom: 2px solid black;
-}
-.mx-auto {
-    display: block; margin-left: auto; margin-right: auto;
-}
-
-/* The special effect dictionary */
-@media (prefers-reduced-motion: no-preference) {
-    .fading {
-        animation: fade-in 2.2s;
-    }
-    .sliding {
-        animation: slide-in 1.2s;
-    }
-    .spinning {
-        animation: spin-in 4.2s;
-    }
-}
-
-/* Fade-in effect for middle section */
-.fade-target {
-    opacity: 0;
-    transform: rotateX(-10deg);
-}
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-.slide-target {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.spin-target {
-    opacity: 0;
-    transform: rotateY(-90deg);
-}
-@keyframes spin-in {
-    from {
-        opacity: 0;
-        transform: rotateY(-90deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateY(0deg);
-    }
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    transform: scaleX(1);
-    opacity: 1;
-    transition: 0.9s;
-}
-
-#navbar.invisible {
-    transform: scaleX(0.99);
-    opacity: 0;
-}
-
 .img-fluid {
     height: auto; 
     width: 90%;
@@ -171,17 +82,6 @@ body::-webkit-scrollbar {
         border-right: none;
         border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
     }
-
-    /* Stack cards vertically on small screens */
-    .row {
-        flex-direction: column;
-    }
-
-    .col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
 }
 @media (max-width: 762px) {
     .offcan {
