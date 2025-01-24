@@ -1,4 +1,4 @@
-/* Transitions, currently including "slide", "fade", and "spin" */
+/*** Transitions, currently including "slide", "fade", and "spin" ***/
 const transitions = [
     // Fade
     { 
@@ -53,7 +53,9 @@ const elements = document.querySelectorAll(
 // Loop over the elements and add each one to the observer
 elements.forEach((element) => observer.observe(element));
 
-/* Collapsible */
+/*** Universal JS ***/
+
+// Collapsible
 document.addEventListener("DOMContentLoaded", function() {
     var coll = document.getElementsByClassName("collapsible1");
 
@@ -76,4 +78,21 @@ document.addEventListener("DOMContentLoaded", function() {
             content.style.maxHeight = content.scrollHeight + "px";
         }
     }
+});
+
+// Card Lift animation
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card.card-lift-1');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseover', function() {
+            this.style.transform = 'translateY(-10px)';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+        });
+        
+        card.addEventListener('mouseout', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'none';
+        });
+    });
 });
