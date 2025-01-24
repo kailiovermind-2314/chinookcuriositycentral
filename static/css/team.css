@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
     border: 5px solid red;
 }
 /* Mobile styles */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     /* Adjusting the navbar for mobile */
     .navbar-nav {
         flex-direction: column;
