@@ -1,18 +1,178 @@
 /* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
-body {
-    background-image: linear-gradient(to bottom right, #CFCFCF, aliceblue);
+.body-text {
+    background-image: linear-gradient(to bottom right, white, aliceblue);
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
 }
 body::-webkit-scrollbar { 
     display: none; 
 }
+.poppins-regular {
+    font-family: "Poppins", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.5;
+}
 
 .debug {
     border: 5px solid red;
 }
-/* Mobile styles */
-@media (max-width: 600px) {
+
+/*** Navbar ***/
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.fade-down {
+    margin-top: 0;
+}
+
+/*** HEADER ***/
+.header-gradient {
+    background: #D9DCDE;
+    background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
+}
+.headerbox {
+    min-height: 100vh; /* Ensures the container is at least the full viewport height */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+/*** NEW EVENTS ***/
+.promotionbox {
+    min-height: calc(100vh - 75.98px);
+    display: flex;
+    flex-direction: column;  /* Changed to column layout */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.promotion-content {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.promotion-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.promotion-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.promotion-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.promotion-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+.promotion-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.promotion-cta:hover {
+    transform: translateY(-3px);
+}
+
+/*** Diciontary ***/
+.dictionary-entry {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.definition-block {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/*** Textbox ***/
+.textbox {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.gradient-text {
+    text-shadow: 2px 2px 4px rgb(184, 222, 255);
+    transition: all 0.3s ease;
+}
+.gradient-text:hover {
+    text-shadow: 2px 2px 4px rgb(131, 197, 255);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) { /* This targets screens below the lg breakpoint */
+    .responsive-centering {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textbox {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%; /* Ensures the div stays responsive */
+    }
+
+    .dictionary-entry {
+        padding: 1rem;
+    }
+    
+    .definition-block {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) { /* This targets screens below the md breakpoint */
+    .promotion-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1rem;
+    }
+    .promotion-text {
+        padding-left: 0;
+    }
+    .promotion-title {
+        font-size: 2rem;
+    }
+    .promotion-description {
+        font-size: 1.1rem;
+    }
+    
     /* Adjusting the navbar for mobile */
     .navbar-nav {
         flex-direction: column;
@@ -23,219 +183,28 @@ body::-webkit-scrollbar {
         width: 100%;
         text-align: left;
     }
-
-    .container,
-    .container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
+}
+@media (max-width: 576px) { /* This targets screens below the sm breakpoint */
+    .sm-noborder {
+        border: 0 !important; 
     }
-
-    .page {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     /* Make the Enigma Express container responsive */
     .inverse-gradient {
         width: 100%;
         margin-bottom: 20px;
     }
-
     /* Stack cards vertically on small screens */
     .row {
         flex-direction: column;
     }
     .responsive-hr {
         border-top: none;
-        border-left: none;
-        border-right: none;
+        border-left: none !important;
+        border-right: none !important; 
         border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
     }
-    .col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
-.header-gradient {
-    background: #D9DCDE;
-    background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
-}
-
-@media (max-width: 992px) { /* This targets screens below the lg breakpoint */
-    .responsive-centering {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.vr {
-    width: 2px; 
-    height: 50px; 
-    background-color: #000000; 
-    margin: 0 0 12px 5%;
-}
-.hr {
-    height: 2px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%; 
-    background-color: #000000; 
-}
-.card {
-    background-color: aliceblue;
-}
-
-/* Curiosities */
-.curiosity {
-    background-color: white;
-    transition: 0.3s;
-}
-.curiosity:hover {
-    background-color: aliceblue;
-}
-.calendar-card {
-    width: 60%;
-}
-@media (max-width: 768px) { /* This targets screens below the md breakpoint */
-    .curiosity {
-        width: 100%;
-    }
-    .calendar-card {
-        width: 100%;
-    }
-    .curiosity:hover {
-        background-color: aliceblue;
-    }
-}
-@media (max-width: 576px) { /* This targets screens below the sm breakpoint */
-    .sm-noborder {
-        border: 0 !important; 
-    }
-}
-
-/* Waterfall */
-.underline {
-    padding-bottom: 1.5%; 
-    border-bottom: 2px solid black;
-}
-.mx-auto {
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-/* Collapsible #1 */
-.collapsible1 {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    text-align: left;
-    outline: none;
-    transition-duration: 0.2s;
-}
-
-.collapsible1:hover {
-    background-color: aliceblue;
-}
-
-.collapsible1:after {
-    content: '\0394'; /* Downward triangle */
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.collapsible1.active-collapsible:after {
-    content: "\2207";
-}
-
-.contentbox {
-    padding: 0px 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-/* The special effect dictionary */
-@media (prefers-reduced-motion: no-preference) {
-    .fading {
-        animation: fade-in 2.2s;
-    }
-    .sliding {
-        animation: slide-in 1.2s;
-    }
-    .spinning {
-        animation: spin-in 4.2s;
-    }
-}
-
-/* Fade-in effect for middle section */
-.fade-target {
-    opacity: 0;
-    transform: rotateX(-10deg);
-}
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-.slide-target {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.spin-target {
-    opacity: 0;
-    transform: rotateY(-90deg);
-}
-@keyframes spin-in {
-    from {
-        opacity: 0;
-        transform: rotateY(-90deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateY(0deg);
-    }
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    transform: scaleX(1);
-    opacity: 1;
-    transition: 0.9s;
-}
-
-#navbar.invisible {
-    transform: scaleX(0.99);
-    opacity: 0;
-}
-
-.gradient-div {
-    transition: 0.3s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.gradient-div:hover {
-    box-shadow: 0 4px 8px 0 rgba(14, 14, 14, 0.438), 0 6px 20px 0 rgba(0, 0, 0, 0.637);
+/* Fine-tune for very small screens */
+@media (max-width: 480px) {
+    
 }
