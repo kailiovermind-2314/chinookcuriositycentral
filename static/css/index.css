@@ -19,30 +19,13 @@ body::-webkit-scrollbar {
     border: 5px solid red;
 }
 
-/*** Navbar ***/
-.dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-}
-.dropdown-menu.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-.fade-down {
-    margin-top: 0;
-}
-
 /*** HEADER ***/
 .header-gradient {
     background: #D9DCDE;
     background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
 }
 .headerbox {
-    height: 100vh; /* Ensures the container is at least the full viewport height */
+    min-height: 100vh; /* Ensures the container is at least the full viewport height */
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
