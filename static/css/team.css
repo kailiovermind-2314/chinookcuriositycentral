@@ -66,24 +66,15 @@ div.middle-div {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.card-img-top {
+    display: block;
+    margin: 0 auto 0 auto;
+}
 
 .page {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.vr {
-    width: 2px; 
-    height: 50px; 
-    background-color: #000000; 
-    margin: 0 0 12px 5%;
-}
-.hr {
-    height: 2px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 100%; 
-    background-color: #000000; 
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -91,6 +82,7 @@ div.middle-div {
 .card-text {
     line-height: 1.5;
 }
+
 /* Parallax */
 .team-parallax {
     background-image: url("../src/profiles/team-2023.jpg");
