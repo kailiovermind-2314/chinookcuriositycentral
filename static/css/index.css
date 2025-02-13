@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
 }
 .headerbox {
-    min-height: 100vh; /* Ensures the container is at least the full viewport height */
+    height: 100vh; /* Ensures the container is at least the full viewport height */
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
@@ -192,16 +192,6 @@ body::-webkit-scrollbar {
     .inverse-gradient {
         width: 100%;
         margin-bottom: 20px;
-    }
-    /* Stack cards vertically on small screens */
-    .row {
-        flex-direction: column;
-    }
-    .responsive-hr {
-        border-top: none;
-        border-left: none !important;
-        border-right: none !important; 
-        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
     }
 }
 /* Fine-tune for very small screens */
